@@ -1,14 +1,12 @@
 <template>
-    <div>
-
+    <div class="container">
+        <h2>Dentists - Patients</h2>
     </div>
 </template>
 
 <script>
 export default {
-    components: {
-    }
-}
+ }
 </script>
 
 <style>
