@@ -1,8 +1,8 @@
 <template>
-  <div class="container bg-dark">
+  <div class="container-fluid bg-dark">
     <div class="row">
         <div class="col text-white">
-            <p>Copyright &copy; <span>{{getCurrentYear}}</span></p>
+            <p>Copyright &copy; <span>{{getCurrentYear()}}</span></p>
         </div>
     </div>
   </div>
