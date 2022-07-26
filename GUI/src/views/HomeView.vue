@@ -11,26 +11,19 @@ export default {
             return this.$store.state.dentistPatients
         }
     },
-    data() {
-        return {
-            id: 0,
-            doctorFullname: '',
-            dentistAge: 0,
-            practiceNumb: '',
-            patientFullname: '',
-            paymentMethods: '',
-            medicalAid: ''
-        }
-    },
+    // data() {
+    //     return {
+    //         id: 0,
+    //         doctorFullname: '',
+    //         dentistAge: 0,
+    //         practiceNumb: '',
+    //         patientFullname: '',
+    //         paymentMethods: '',
+    //         medicalAid: ''
+    //     }
+    // },
     mounted() {
-        this.$store.dispatch('fetchDentistPatients', {
-            id: this.id,
-            dentistAge: this.dentistAge,
-            practiceNumb: this.practiceNumb,
-            patientFullname: this.patientFullname,
-            paymentMethods: this.paymentMethods,
-            medicalAid: this.medicalAid
-        });
+        this.$store.dispatch('fetchDentistPatients');
     }
  }
 </script>

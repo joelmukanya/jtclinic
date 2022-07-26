@@ -37,10 +37,10 @@ export default createStore({
         mode: 'no-cors',
         headers: header,
       }).then((res) => res.json()).
-      then( (data) => {return data.data})
+      then( data => {return data.data})
       .catch( err => console.log(err.message)); 
-
-      if(result.length) context.commit('setDentistPatients', result);
+      console.log(result);
+      if(result) context.commit('setDentistPatients', result);
       // const data = await res.data;
       // console.log(data);
       // if(data.length ) 
